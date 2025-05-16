@@ -1,0 +1,33 @@
+# Configuration file for the img2text-transfer-attn project
+
+# Dataset paths
+data:
+  train_path: "data/coco/train2017"
+  val_path: "data/coco/val2017"
+  test_path: "data/coco/test2017"
+  captions_path: "data/coco/annotations/captions.json"
+
+# Model parameters
+model:
+  encoder: "resnet50"  # Pre-trained CNN encoder
+  decoder: "transformer"  # Options: "lstm", "transformer"
+  embedding_dim: 512
+  hidden_dim: 512
+  num_heads: 8
+  num_layers: 6
+
+# Training parameters
+training:
+  batch_size: 32
+  learning_rate: 0.001
+  num_epochs: 20
+  device: "cuda"  # Options: "cuda", "cpu"
+
+# Evaluation parameters
+evaluation:
+  metrics: ["BLEU", "METEOR", "CIDEr"]
+
+# Logging
+logging:
+  log_dir: "logs/"
+  checkpoint_dir: "checkpoints/"

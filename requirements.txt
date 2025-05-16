@@ -1,0 +1,10 @@
+# Python dependencies for the img2text-transfer-attn project
+
+tensorflow>=2.0
+pytorch>=1.8
+numpy
+pandas
+matplotlib
+seaborn
+scikit-learn
+pyyaml
