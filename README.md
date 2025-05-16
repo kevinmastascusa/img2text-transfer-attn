@@ -1,6 +1,15 @@
 # img2text-transfer-attn
 img2text-transfer-attn is a modular image-captioning codebase for MS COCO. A pre-trained CNN encodes images into feature embeddings, which are decoded by either an LSTM or a Transformer with masked multi-head attention and positional encodings. Easily swap encoders or fine-tune layers.
 
+[![Course: DSCI-471 SP24-25](https://img.shields.io/badge/Course-DSCI--471%20SP24--25-blueviolet.svg)](./)
+[![Dataset: MS COCO](https://img.shields.io/badge/Dataset-MS%20COCO-blue.svg)](https://cocodataset.org/)
+[![Python 3.x](https://img.shields.io/badge/Python-3.x-blue.svg)](https://www.python.org/)
+[![Project Status: WIP](https://img.shields.io/badge/Status-Work%20In%20Progress-orange.svg)](./)
+
+[![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)](https://www.tensorflow.org/)
+[![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)](https://pytorch.org/)
+
+
 ## Architecture
 
 The following diagram illustrates the architecture of the Image-to-Text Generation system, detailing both the baseline (CNN + LSTM) and advanced (CNN + Transformer) models.
